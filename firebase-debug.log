@@ -14,3 +14,29 @@
 [debug] [2023-01-14T02:18:49.879Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}]},"metadata":{"message":"assigned listening specs for emulators"}}
 [debug] [2023-01-14T02:18:49.905Z] [hub] writing locator at C:\Users\mateu\AppData\Local\Temp\hub-bcompany-5f3b8.json
 [debug] [2023-01-14T02:18:49.980Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/bcompany-5f3b8/sites 
+[debug] [2023-01-14T02:18:51.121Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/bcompany-5f3b8/sites 200
+[debug] [2023-01-14T02:18:51.122Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/bcompany-5f3b8/sites {"sites":[{"name":"projects/bcompany-5f3b8/sites/bcompany-5f3b8","defaultUrl":"https://bcompany-5f3b8.web.app","appId":"1:315559851543:web:d0c29b77a80680ea2d0e52","type":"DEFAULT_SITE"}]}
+[debug] [2023-01-14T02:18:51.123Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/bcompany-5f3b8/webApps/1:315559851543:web:d0c29b77a80680ea2d0e52/config [none]
+[debug] [2023-01-14T02:18:52.303Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/bcompany-5f3b8/webApps/1:315559851543:web:d0c29b77a80680ea2d0e52/config 200
+[debug] [2023-01-14T02:18:52.304Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/bcompany-5f3b8/webApps/1:315559851543:web:d0c29b77a80680ea2d0e52/config {"projectId":"bcompany-5f3b8","appId":"1:315559851543:web:d0c29b77a80680ea2d0e52","storageBucket":"bcompany-5f3b8.appspot.com","locationId":"us-central","apiKey":"AIzaSyAGzvZIVH2Q75LmxBGGn6AOL83jYpg5msg","authDomain":"bcompany-5f3b8.firebaseapp.com","messagingSenderId":"315559851543","measurementId":"G-JG3S0JX3C6"}
+[debug] [2023-01-14T02:18:52.367Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/bcompany-5f3b8 [none]
+[debug] [2023-01-14T02:18:52.790Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/bcompany-5f3b8 200
+[debug] [2023-01-14T02:18:52.791Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/bcompany-5f3b8 {"projectId":"bcompany-5f3b8","projectNumber":"315559851543","displayName":"bcompany","name":"projects/bcompany-5f3b8","resources":{"hostingSite":"bcompany-5f3b8","storageBucket":"bcompany-5f3b8.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_95464987-d522-4fb3-b4a0-03d27153456c"}
+[info] i  hosting[bcompany-5f3b8]: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] +  hosting[bcompany-5f3b8]: Local server: http://127.0.0.1:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://127.0.0.1:5000\u001b[22m\u001b[24m"}}
+[warn] !  emulators: The Emulator UI is not starting, either because none of the emulated products have an interaction layer in Emulator UI or it cannot determine the Project ID. Pass the --project flag to specify a project. {"metadata":{"emulator":{"name":"hub"},"message":"The Emulator UI is not starting, either because none of the emulated products have an interaction layer in Emulator UI or it cannot determine the Project ID. Pass the --project flag to specify a project."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+└─────────────────────────────────────────────────────────────┘
+
+┌──────────┬────────────────┐
+│ Emulator │ Host:Port      │
+├──────────┼────────────────┤
+│ Hosting  │ 127.0.0.1:5000 │
+└──────────┴────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
